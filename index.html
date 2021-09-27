@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <p>I'm hosted with GitHub Pages.</p>
+    <meta charset="UTF-8" />
+
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
+    <title>Zomato Indian Restraurants | A Case Study</title>
+    <meta name="generator" content="Jekyll v3.7.3" />
+    <meta property="og:title" content="Zomato Indian Restraurants | A Case Study" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      name="description"
+      content="Mohd Faizan"
+    />
+    <meta
+      property="og:description"
+      content="Mohd Faizan"
+    />
+    <link rel="canonical" href="https://github.com/faizansiddiqu007/Case_study_zomato_Indian_restaurants_Faizan" />
+    <meta
+      property="og:url"
+      content="https://github.com/faizansiddiqu007/Case_study_zomato_Indian_restaurants_Faizan"
+    />
+    <meta property="og:site_name" content="Zomato Indian Restraurants | A Case Study" />
+    <script type="application/ld+json">
+      {
+        "name": "Zomato Indian Restraurants | A Case Study",
+        "description": "Mohd Faizan",
+        "@type": "WebSite",
+        "url": "https://github.com/faizansiddiqu007/Case_study_zomato_Indian_restaurants_Faizan",
+        "headline": "Zomato Indian Restraurants | A Case Study",
+        "@context": "http://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#157878" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Zomato Indian Restraurants </h1>
+      <h2 class="project-tagline">
+        Mohd Faizan
+      </h2>
+
+      <a href="https://github.com/faizansiddiqu007/Case_study_zomato_Indian_restaurants_Faizan" class="btn"
+        >View on GitHub</a
+      >
+    </section>
+
+    <section class="main-content">
+      <h1 id="Zomato Indian Restraurants | A Case Study">Zomato Indian Restraurants | A Case Study</h1>
+
+      <h2 id="introduction">Introduction</h2>
+
+      <p>
+Zomato is an Indian restaurant search and discovery service founded in 2008 by Deepinder Goyal and Pankaj Chaddah. It currently operates in 23 countries, including Australia and United States. It provides information and reviews on restaurants, including images of menus where the restaurant does not have its own website.
+
+      </p>
+
+      
+      <h2 id="Inspiration and Vision ">Inspiration and Vision</h2>
+
+      <p>
+        I was always astonished by how each of the restaurants are able to keep up the pace inspite of that cutting edge competition. And what factors should be kept in mind if someone wants to open new restaurant. Does the demography of an area matters? Does location of a particular type of restaurant also depends on the people living in that area? Does the theme of the restaurant matters? Is a food chain category restaurant likely to have more customers than its counter part? Are any neighborhood similar ? If two neighborhood are similar does that mean these are related or particular group of people live in the neighborhood or these are the places to it? What kind of a food is more popular in a locality. Do the entire locality loves vegetarian food. If yes then is that locality populated by a particular sect of people for eg. Jain, Marwaris, Gujaratis who are mostly vegetarian. There are infacts dozens of question in my mind. lets try to find out the answer with this dataset.
+        </p>
+        
+
+      
+
+      <h2 id="Dataset  ">Dataset</h2>
+
+      <p>
+        We have developed and tested our system based on the dataset that  has been collected from the Zomato API. 
+        Each restaurant in the dataset is uniquely identified by its Restaurant Id. Every Restaurant contains the following variables:
+
+      <p>• Restaurant Id: Unique id of every restaurant across delhi and cities of the world</p>
+      <p>• Restaurant Name: Name of the restaurant</p>
+      <p>• Country Code: Country in which restaurant is located</p>
+      <p>• Country Code: Country in which restaurant is located</p>
+      <p>• City: City in which restaurant is located</p>
+      <p>• Address: Address of the restaurant</p>
+      <p>• Locality: Location in the city</p>
+      <p>• Cuisines: Cuisines offered by the restaurant</p>
+      <p>• Average Cost for two: Cost for two people in different currencies </p>
+      <p>• Has Table booking: yes/no</p>
+      <p>• Has Online delivery: yes/ no</p>
+     <p>• Price range: range of price of food</p>
+      <p>• Aggregate Rating: Average rating out of 5</p>
+     <p>• Votes: Number of ratings casted by people</p>
+      </p>
+
+      
+      <h2 id="Questions Discussed">Questions Discussed</h2>
+
+     <p>1. The dataset is highly skewed toward the cities included in Delhi-NCR. So, we will summarise all the other cities in Rest of India while those in New Delhi, Ghaziabad, Noida, Gurgaon, Faridabad to Delhi-NCR. Doing this would make our analysis turn toward Delhi-NCR v Rest of India </p>
+
+<p>- Compare the number of restaurants present in Delhi NCR vs Rest of India.</p>
+  
+<p>-Find the cuisines which are not present in restaurant of Delhi NCR but present in rest of India.Check using Zomato API whether this cuisines are actually not served in restaurants of Delhi-NCR or just it due to incomplete dataset.</p>
+
+<p>-Find the top 10 cuisines served by maximum number of restaurants in Delhi NCR and rest of India.</p>
+  
+  <p>- Write a short detailed analysis of how cuisine served is different from Delhi NCR to Rest of India. Plot the suitable graph to explain your inference.</p>
+  
+  <p>2. User Rating of a restaurant plays a crucial role in selecting a restaurant or ordering the food from the restaurant.</p>
+  
+  <p>~ Write a short detail analysis of how the rating is affected by restaurant due following features: Plot a suitable graph to explain your inference.</p>
+  
+  <p> - Number of Votes given Restaurant</p>
+  
+  <p>- Restaurant serving more number of cuisines.</p>
+  
+  <p>- Average Cost of Restaurant</p>
+  
+  <p>-Restaurant serving some specific cuisines.</p>
+  
+  <p>~ Find the weighted restaurant rating of each locality and find out the top 10 localities with more weighted restaurant rating?</p>
+  
+  <p>-Weighted Restaurant Rating=Σ (number of votes * rating) / Σ (number of votes) .</p>
+  
+  <p>3. Visualization</p>
+  
+  <p>- Plot the bar graph top 15 restaurants have a maximum number of outlets.</p>
+  
+  <p>- Plot the histogram of aggregate rating of restaurant( drop the unrated restaurant).</p>
+  
+  <p>- Plot the bar graph top 10 restaurants in the data with the highest number of votes.</p>
+  
+  <p>- Plot the pie graph of top 10 cuisines present in restaurants in the USA.</p>
+  
+  <p>- Plot the bubble graph of a number of Restaurants present in the city of India and keeping the weighted restaurant rating of the city in a bubble.</p>
+
+      
+      </p>
+
+      <h2 id="Acknowledgements">Acknowledgements</h2>
+
+      <p>
+      
+
+        The data scraped was entirely for educational purposes only. Note that I don’t claim any copyright for the data. All copyrights for the data is owned by Zomato Media Pvt. Ltd..
+        
+        
+      </p>
+
+      
+
+      <footer class="site-footer">
+        
+
+        <span class="site-footer-credits"
+          >This page was generated by
+          <a href="https://pages.github.com">GitHub Pages</a>.</span
+        >
+      </footer>
+    </section>
+  </body>
+</html>
